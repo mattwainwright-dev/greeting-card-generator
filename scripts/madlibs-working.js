@@ -5,7 +5,7 @@ let noun = prompt("A noun");
 function makeCard() {
 console.log("Dear " + name + ",");
 console.log("You are as " + adjective + " as a " + noun + ".");
-console.log("Happy birthday from the generator.");
+console.log("Happy birthday fromthe generator.");
 }
 
-setInterval(makeCard, 2000);
+makeCard();
