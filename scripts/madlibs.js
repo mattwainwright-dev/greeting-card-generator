@@ -1,12 +1,14 @@
 let name = prompt("A name");
 let adjective = prompt("An adjective");
 let noun = prompt("A noun");
+let style = prompt("Fancy or silly?");
 let closings = [
     "You are a legend.",
     "Stay golden.",
     "Signs point to awesome.",
     "Keep being weird.",
     "Chaos suits you."
+
 ];
 
 function randomNumber(a, b) {
@@ -14,7 +16,13 @@ function randomNumber(a, b) {
 }
 
 function makeCard() {
-console.log("Dear " + name + ",");
+if (style === "fancy") {
+    console.log("Dearest " + name + ",");
+} else if (style === "silly") {
+ console.log("YO " + name + "!");
+} else {
+    console.log("Hey " + name + ",");
+   }
 console.log("You are as " + adjective + " as a " + noun + ".");
 console.log("Happy birthday from the generator.");
 
