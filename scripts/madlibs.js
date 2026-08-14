@@ -7,7 +7,8 @@ let closings = [
     "Stay golden.",
     "Signs point to awesome.",
     "Keep being weird.",
-    "Chaos suits you."
+    "Chaos suits you.",
+    "Stay strange."
 
 ];
 
