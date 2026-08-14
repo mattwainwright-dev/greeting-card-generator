@@ -16,9 +16,9 @@ function randomNumber(a, b) {
 }
 
 function makeCard() {
-if (style === "fancy") {
+if (style.toLowerCase() === "fancy") {
     console.log("Dearest " + name + ",");
-} else if (style === "silly") {
+} else if (style.toLowerCase() === "silly") {
  console.log("YO " + name + "!");
 } else {
     console.log("Hey " + name + ",");
