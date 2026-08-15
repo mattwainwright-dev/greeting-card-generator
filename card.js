@@ -1,0 +1,31 @@
+const makeButton = document.querySelector("#make-button");
+
+let nameInput = document.getElementById("name-input");
+let adjectiveInput = document.getElementById("adjective-input");
+let nounInput = document.getElementById("noun-input");
+let cardText = document.getElementById("card-text");
+let closingText = document.getElementById("closing-text");
+
+let closings = [
+    "Find your Pulse.",
+    "Turn your noise down.",
+    "Keep your finger on the Pulse.",
+    "Don't forget to live.",
+    "🤘Music For The People🫶."
+];
+
+function randomNumber(a, b) {
+    return Math.floor(Math.random() * (b - a + 1)) + a;
+}
+
+function makeCard() {
+    let friendName = nameInput.value;
+    let adjective = adjectiveInput.value;
+    let noun = nounInput.value;
+    let closing = closings[randomNumber(0, closings.length - 1)];
+
+    cardText.textContent = "Dear " + friendName + ", you are a " + adjective + " " + noun + ".";
+    closingText.textContent = closing;
+}
+
+makeButton.addEventListener("click", makeCard);
