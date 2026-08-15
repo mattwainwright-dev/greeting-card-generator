@@ -24,7 +24,7 @@ function makeCard() {
     let noun = nounInput.value;
     let closing = closings[randomNumber(0, closings.length - 1)];
 
-    cardText.textContent = "Dear " + friendName + ", you are a " + adjective + " " + noun + ".";
+    cardText.textContent = "Hey " + friendName + ", your Pulse is " + adjective + " and your sound hits like a " + noun + ".";
     closingText.textContent = closing;
 }
 
