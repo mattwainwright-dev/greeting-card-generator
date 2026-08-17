@@ -6,6 +6,7 @@ let adjectiveInput = document.getElementById("adjective-input");
 let nounInput = document.getElementById("noun-input");
 let cardText = document.getElementById("card-text");
 let closingText = document.getElementById("closing-text");
+let cardSection = document.getElementById("card-section");
 
 let closings = [
     "Find your Pulse.",
@@ -20,6 +21,8 @@ function randomNumber(a, b) {
 }
 
 function makeCard() {
+    cardSection.hidden = false;
+    
     let friendName = nameInput.value;
     let adjective = adjectiveInput.value;
     let noun = nounInput.value;
