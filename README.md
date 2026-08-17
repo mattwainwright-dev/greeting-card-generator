@@ -9,4 +9,4 @@ Enter a name, adjective, and noun to generate a card, with a hidden surprise aft
 
 ## Live
 
-- GitHub Pages URL coming next.
+- https://mattwainwright-dev.github.io/greeting-card-generator/
