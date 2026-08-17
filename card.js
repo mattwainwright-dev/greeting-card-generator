@@ -1,5 +1,6 @@
 const makeButton = document.querySelector("#make-button");
 const surpriseButton = document.querySelector("#surprise-button");
+const resetButton = document.querySelector("#reset-button");
 
 let nameInput = document.getElementById("name-input");
 let adjectiveInput = document.getElementById("adjective-input");
@@ -22,7 +23,7 @@ function randomNumber(a, b) {
 
 function makeCard() {
     cardSection.hidden = false;
-    
+
     let friendName = nameInput.value;
     let adjective = adjectiveInput.value;
     let noun = nounInput.value;
@@ -37,5 +38,13 @@ function surpriseMe() {
     closingText.textContent = closing;
 }
 
+function resetGenerator() {
+    nameInput.value = "";
+    adjectiveInput.value = "";
+    nounInput.value = "";
+    cardSection.hidden = true;
+}
+
 makeButton.addEventListener("click", makeCard);
 surpriseButton.addEventListener("click", surpriseMe);
+resetButton.addEventListener("click", resetGenerator);
