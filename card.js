@@ -1,4 +1,5 @@
 const makeButton = document.querySelector("#make-button");
+const surpriseButton = document.querySelector("#surprise-button");
 
 let nameInput = document.getElementById("name-input");
 let adjectiveInput = document.getElementById("adjective-input");
@@ -28,4 +29,10 @@ function makeCard() {
     closingText.textContent = closing;
 }
 
+function surpriseMe() {
+    let closing = closings[randomNumber(0, closings.length - 1)];
+    closingText.textContent = closing;
+}
+
 makeButton.addEventListener("click", makeCard);
+surpriseButton.addEventListener("click", surpriseMe);
