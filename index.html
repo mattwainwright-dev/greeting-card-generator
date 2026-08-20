@@ -1,59 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+      
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <title> Greeting Card Generator</title>
-
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.1.1/css/pico.classless.min.css"/>
-        <link rel="stylesheet" href="style.css" />   
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.1.1/css/pico.classless.min.css"/>
+         <link rel="stylesheet" href="style.css" />   
 
     </head>
     <body>
+        <!-- Page header with Pulse branding -->
         <header>
+        <!-- Displays the Pulse logo -->    
             <img class="pulse-logo" src="pulse-hero-transparent-fixed.png" alt="Pulse logo" />
             <h1>Greeting Card Generator</h1>
         </header>
-
+        <!-- Main greeting card generator content -->
         <main>
+        <!-- Collects the words used to create the card -->
             <section id="order-section">
                 <h2>Order a card</h2>
-
+        <!-- Name input -->
                 <label>
                     A name
                     <input id="name-input" type="text" />
                 </label>
-
+        <!-- Adjective input -->
                 <label>
                     An adjective
                     <input id="adjective-input" type="text" />
                 </label>
-
+        <!-- Noun input -->
                 <label>
                     A noun
                     <input id="noun-input" type="text" />
                 </label>
-
+        <!-- Creates the greeting card when clicked -->
                 <button id="make-button" type="button">Make my card</button>
             </section>
-
+        <!-- Hidden card section revealed after a card is created -->
             <section id="card-section" hidden>
                 <article>
+        <!-- Secret message revealed after five cards -->
                     <p id="bonus-line" hidden>You found your hidden Pulse. 🤘🫶 </p>
+
+        <!-- Displays the generated greeting -->            
                     <p id="card-text">Your card will appear here.</p>
+
+        <!-- Displays the random closing -->            
                     <p id="closing-text"></p>
                 </article>
 
+        <!-- Generates a different random closing -->
                 <button type="button" id="surprise-button">Surprise me</button>
+
+        <!-- Resets the generator -->        
                 <button type="button" id="reset-button">Reset</button>
             </section>
         </main>
 
+        <!-- Page footer -->
         <footer>
             <p>Created by Matthew Wainwright, 2026.</p>
         </footer>
-
+        <!-- Connects the JavaScript to the page -->
         <script src="card.js"></script>
     </body>
 </html>
